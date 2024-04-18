@@ -15,6 +15,12 @@ Route::get('/contato', function () { /* criando nova rota com o get recebendo  *
     return view('Contato'); /* ao acessar aquela rota retorna essa view*/
 });
 
-Route::get('/produto', function (){
-    return view('produto');
+Route::get('/produtos', function (){
+
+        $busca = request('search');
+        return view('produtos', ['busca' => $busca]); /* criando variação de tela se o usuario estiver buscando pelo search */
+});
+
+Route::get('/produtos/{id}', function ($id) {
+    return view('produtos', ['id'=> $id]); /* cria uma tela derivada do produto usando o id como separador */
 });

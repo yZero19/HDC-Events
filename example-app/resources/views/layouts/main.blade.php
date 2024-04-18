@@ -21,7 +21,28 @@
 
 </head>
 <body>
-
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbar">
+            <a href="/" class="navbar-brand">
+                <img src="/img/logo.png" alt="logo">
+            </a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">criar eventos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">Entrar</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/" class="nav-link">cadastrar</a>
+                </li>
+        </div>
+    </nav>
+</hearder>
 @yield('content') <!--será substituido pelo conteudo da pagina -->
 <footer>
     <p>hdc Events &copy; 2024</p>
