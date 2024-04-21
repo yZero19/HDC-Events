@@ -4,16 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\events;
 
 class EventController extends Controller
 {
     public function index(){
         
-        $nome = "mateus"; /* criando variavel*/
+     $events = events::all(); /** se conecta ao banco buscando TODOS os dados */
 
-    return view('welcome', ['nome' => $nome]); /*passando a variavel pela rota e destinando o valor a view "welcome"*/
-
-
+     return view('welcome',['events'=> $events]);
 }
 
 public function create(){
