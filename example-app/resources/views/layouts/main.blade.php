@@ -7,8 +7,8 @@
     <title>@yield('title') <!--será substituido pelo titulo da pagina --></title>
     
     <!-- estilos a serem reutilizados-->
-    <link rel="stylesheet" href ="/css/style.css">
-    <script src="/js/script.js"></script>
+    <link rel="stylesheet" href ="../css/style.css">
+    <script src="../js/script.js"></script>
 
     <!-- Fontes Externas para uso -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
