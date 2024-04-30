@@ -44,7 +44,16 @@
         </div>
     </nav>
 </hearder>
-@yield('content') <!--será substituido pelo conteudo da pagina -->
+<main>
+    <div class="container-fluid">
+        <div class="row">
+            @if(session('msg'))
+            <p class="msg">{{ session('msg')}}</p>
+            @endif
+            @yield('content') <!--será substituido pelo conteudo da pagina -->
+        </div>
+    </div>
+</main>
 <footer>
     <p>hdc Events &copy; 2024</p>
 </footer>
