@@ -40,11 +40,12 @@
                 <li class="nav-item">
                     <a href="/" class="nav-link">cadastrar</a>
                 </li>
-                
         </div>
     </nav>
+    <hr>
 </hearder>
-<main>
+<main> 
+    
     <div class="container-fluid">
         <div class="row">
             @if(session('msg'))

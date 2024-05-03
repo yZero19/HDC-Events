@@ -216,3 +216,12 @@ footer p{
 
     background-color: rgba(0, 255, 255, 0.685);
 }
+
+#items-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  #items-list li {
+    display: flex;
+  }
