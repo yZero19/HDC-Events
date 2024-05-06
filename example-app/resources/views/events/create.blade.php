@@ -18,7 +18,7 @@
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome Do Evento">
         </div><br>
         <div class="mb-2">
-      <label for="date">Data Do Eventp:</label><br>
+      <label for="date">Data Do Evento:</label><br>
       <input class="form-control" type="date" id="date" name="date"></div><br>
         <div>
         <div class="form-group">
