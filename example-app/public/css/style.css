@@ -128,7 +128,7 @@ body{
 #event-create-container input,
 #event-create-container select,
 #event-create-container textarea {
-    max-width: 250px;
+    max-width: 450px;
     font-size: 18px;
     margin-bottom: 15px; /* Adicione um espaçamento entre os elementos */
 }

@@ -5,7 +5,7 @@
 @section ('content')
 
 
-
+<hr>
 <div id="event-create-container" class="col-md-03">
     <h1>Crie O Seu Evento</h1> <br><br>
     <form action="/events" method="POST" enctype="multipart/form-data">
@@ -17,6 +17,10 @@
             <label for="title">Evento</label>
             <input type="text" class="form-control" id="title" name="title" placeholder="Nome Do Evento">
         </div><br>
+        <div class="mb-2">
+      <label for="date">Data Do Eventp:</label><br>
+      <input class="form-control" type="date" id="date" name="date"></div><br>
+        <div>
         <div class="form-group">
             <label for="title">Cidade:</label>
             <input type="text" class="form-control" id="city" name="city" placeholder="Local Do Evento">

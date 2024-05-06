@@ -41,8 +41,7 @@
                     <a href="/" class="nav-link">cadastrar</a>
                 </li>
         </div>
-    </nav>
-    <hr>
+</nav>
 </hearder>
 <main> 
     
