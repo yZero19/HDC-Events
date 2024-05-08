@@ -20,15 +20,15 @@
     <div id="cards-container" class="row">
         @foreach($events as $event)
         <div class="card col-md-3">
-            <img src="/image/{{ $event -> image }}" alt="{{ $event -> title }}">
-            <div class="card-body">
-                <p class="card-date">{{ date('d/m/Y', strtotime($event -> date)) }}</p>
-                <h5 class="card-title">{{ $event->title }}</h5>
-                <p class="card-participants">X Participantes</p>
-                <a href="/events/{{ $event->id}}" class="btn btn-primary">Saber mais</a>
-                
-            </div>
-        </div>
+    <img src="/img/events/{{ $event->image }}" alt="{{ $event->title }}">
+    <div class="card-body">
+        <p class="card-date">{{ date('d/m/Y', strtotime($event->date)) }}</p>
+        <h5 class="card-title">{{ $event->title }}</h5>
+        <p class="card-participants">X Participantes</p>
+        <a href="/events/{{ $event->id}}" class="btn btn-primary">Saber mais</a>
+    </div>
+</div>
+
         @endforeach
         @if(count($events)== 0 && $search)
         <P>Não foi possivel encontrar nenhum evento evento com {{ $search }}! <a href="/">Ver todos</a></P>
