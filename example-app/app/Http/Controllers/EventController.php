@@ -29,7 +29,7 @@ class EventController extends Controller
             [
                 'city' => $request->city,
                 'private' => $request->private,
-                'descrition' => $request->descrition,
+                'description' => $request->descrition, // Corrigido de 'descrition' para 'description'
                 'items' => $request->items,
                 'date' => $request->date,
             ]
@@ -39,11 +39,13 @@ class EventController extends Controller
             $requestImage = $request->image;
             $extension = $requestImage->extension();
             $imageName = md5($requestImage->getClientOriginalName(). strtotime("now")). ".".$extension;
-            $request->image->move(public_path('/image'), $imageName);
+            $requestImage->move(public_path('/image'), $imageName); // Certifique-se de que o diretório existe
             $event->image = $imageName;
             $event->save();
         }
 
+        $user = auth()->user();
+        $event->user_id = $user->id; // Corrigido de 'iser_id' para 'user_id'
         return redirect('/')->with('msg', 'Evento criado com sucesso!');
     }
 
