@@ -233,3 +233,20 @@ footer p{
   #items-list li {
     display: flex;
   }
+
+  .dashboard-title-container{
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .dashboard-events-container th{
+
+    width: 25px;
+
+  }
+  .dashboard-events-container a{
+
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+  }
