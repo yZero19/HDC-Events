@@ -170,7 +170,7 @@ footer p{
 .msg{
 
     background-color: #d4edda;
-    color: aqua;
+    color: rgb(0, 0, 0);
     border: 1px solid #c3e6cb;
     width: 100%;
     text-align: center;
@@ -249,4 +249,12 @@ footer p{
 
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
+  }
+
+  .dashboard-events-container form{
+    
+    display: inline-block;
+    color: #fff;
+
+
   }
