@@ -93,5 +93,36 @@ public function destroy($id){
 
     return redirect('/dashboard')->with('msg', 'Evento excluido com sucesso');
 }
+
+public function edit($id){
+
+    $event = Event::findorfail($id);
+
+    return view('events.edit', ['event' => $event]);
+}
+
+public function update(request $request){
+
+    $data = $request->all();
+
+    if($request->hasFile('image') && $request->file('image')->isValid()) {
+
+        $requestImage = $request->image;
+
+        $extension = $requestImage->extension();
+
+        $imageName = md5($requestImage->getClientOriginalName() . strtotime("now")) . "." . $extension;
+
+        $requestImage->move(public_path('img/events'), $imageName);
+
+        $data['image'] = $imageName;
+
+    }
+
+    Event::findorfail($request->id)->update($data);
+
+    return redirect('/dashboard')->with('msg', 'Evento editado com sucesso');
+
+}
 }
 

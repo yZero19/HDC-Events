@@ -23,8 +23,8 @@ body{
 }
 
 #navbar img {
-    max-width: 100%; 
-
+  max-width: 80px; /* Reduz o tamanho máximo da imagem */
+  height: auto; /* Mantém a proporção da imagem */
 }
 #navbar{
     justify-content: space-between; /* Altera para space-between */
@@ -256,5 +256,13 @@ footer p{
     display: inline-block;
     color: #fff;
 
+
+  }
+
+  .img-preview{
+
+    width: 200px;
+    margin-bottom: 30px;
+    margin-top: 20px;
 
   }
