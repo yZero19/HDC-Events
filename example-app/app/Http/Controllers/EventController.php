@@ -124,5 +124,16 @@ public function update(request $request){
     return redirect('/dashboard')->with('msg', 'Evento editado com sucesso');
 
 }
+
+ public function joinEvent($id){
+
+    $user = auth()->user();
+
+    $user -> eventsAsParticipant()->attach($id);
+
+    $event = Event::findorfail($id);
+
+    return redirect('/dashboard') -> with('msg', 'sua presença foi confirmada no evento ' . $event->title);
+ }
 }
 
