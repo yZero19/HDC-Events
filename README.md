@@ -20,5 +20,3 @@
 ## 📝 Contribuição
 <P>Contribuições são bem-vindas Sinta-se à vontade para abrir uma issue ou fork este projeto e enviar um pull request.</P>
 
-## 📜 Licença
-<P>Este projeto está licenciado sob a MIT License. Veja o arquivo LICENSE para mais detalhes.</P>
