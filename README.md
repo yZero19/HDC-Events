@@ -4,7 +4,7 @@
 <h1> 🎯 Objetivo </h1>
 <P>Criar um portal de eventos online onde os organizadores possam listar eventos, enquanto os participantes podem visualizar e inscrever-se nos eventos de seu interesse.</P>
 
-<h1> 🏛️ Arquitetuta </h1> 
+<h1> 🏛️ Arquitetura </h1> 
 
 ## MVC 
 
