@@ -4,14 +4,22 @@
 ## 🎯 Objetivo
 <P>Criar um portal de eventos online onde os organizadores possam listar eventos, enquanto os participantes podem visualizar e inscrever-se nos eventos de seu interesse.</P>
 
+## 🏛️ Arquitetuta
+
+<h1> MVC </h1>
+
+<p> Projeto realizando seguindo o conceito da arquitetura mvc (Model, View e Controller) </p>
+
 ## 🛠️ Tecnologias Utilizadas</P>
+
 <P>Backend: Laravel </P>
 <P>Frontend: HTML, CSS, BootStrap</P>
 <P>Banco de Dados: MySQL</P>
 <P>Servidor Web: Apache</P>
 
 ## 🏗️ Como Construir
-<P>Pré-requisitos</P>
+<h1>Pré-requisitos</h1>
+
 <P>Certifique-se de ter instalado o Composer, Node.js e um servidor web (Apache ou Nginx).</P>
 
 ## 🖥️ Execução
