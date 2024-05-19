@@ -266,3 +266,13 @@ footer p{
     margin-top: 20px;
 
   }
+
+  #info-container .already-joined-msg{
+    margin: 15px 0;
+    color: rgb(0, 119, 255);
+    background: rgba(0, 255, 255, 0.281);
+    border: 1px solid white;
+    padding: 10px;
+    width: 275px;
+
+  }

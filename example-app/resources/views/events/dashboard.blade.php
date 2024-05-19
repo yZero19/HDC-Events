@@ -40,10 +40,11 @@
 </div>
 
 <div class="col-md-10 offset-md-1 dashboard-title-container">
-    <h1>        Presença Confirmada</h1>
+    <h1>Presença Confirmada</h1>
 </div>
 
 <div class="col-md-10 offset dashboard-events-container">
+
    @if(count($eventsAsParticipant )> 0)
 
    <table class="table">
@@ -61,7 +62,12 @@
                 <td scope="row">{{$loop->index + 1}}</td>
                 <td><a href="/events/{{$event->id}}">{{ $event->title }}</a></td>
                 <td>{{ count($event->users) }}</td>
-                <td><a href="#"> Sair Do Evento</a></td>
+                <td>
+                    <form action="/events/leave/{{ $event->id}}" method="POST">
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-danger delete-btn"><ion-icon name="trash-outline"></ion-icon> Sair Do Evento</button>
+                </form></td>
             </tr>
             
             @endforeach
